@@ -1,0 +1,21 @@
+{
+
+"author": "Nick Bownes",
+
+"name": "censorify",
+
+"version": "0.1.1",
+
+"description": "Censors words out of text",
+
+"main": "censortext",
+
+"dependencies": {},
+
+"engines": {
+
+   "node": "*"
+
+	}
+
+}
