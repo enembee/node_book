@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . C:\Users\nb008\AppData\Roaming\npm-cache\3a52ce78-.lock
+11 verbose tar pack [ 'C:\\Users\\nb008\\AppData\\Roaming\\npm-cache\\censorify\\0.1.1\\package.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball C:\Users\nb008\AppData\Roaming\npm-cache\censorify\0.1.1\package.tgz
+13 verbose folder .
+14 info prepublish censorify@0.1.1
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. C:\Users\nb008\AppData\Roaming\npm-cache\1f1177db-tar.lock
+17 silly lockFile 1596b0e0-ache-censorify-0-1-1-package-tgz tar://C:\Users\nb008\AppData\Roaming\npm-cache\censorify\0.1.1\package.tgz
+18 verbose lock tar://C:\Users\nb008\AppData\Roaming\npm-cache\censorify\0.1.1\package.tgz C:\Users\nb008\AppData\Roaming\npm-cache\1596b0e0-ache-censorify-0-1-1-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 1596b0e0-ache-censorify-0-1-1-package-tgz tar://C:\Users\nb008\AppData\Roaming\npm-cache\censorify\0.1.1\package.tgz
+22 silly lockFile 1596b0e0-ache-censorify-0-1-1-package-tgz tar://C:\Users\nb008\AppData\Roaming\npm-cache\censorify\0.1.1\package.tgz
+23 silly lockFile f4e85958-pm-cache-censorify-0-1-1-package C:\Users\nb008\AppData\Roaming\npm-cache\censorify\0.1.1\package
+24 verbose lock C:\Users\nb008\AppData\Roaming\npm-cache\censorify\0.1.1\package C:\Users\nb008\AppData\Roaming\npm-cache\f4e85958-pm-cache-censorify-0-1-1-package.lock
+25 silly lockFile f4e85958-pm-cache-censorify-0-1-1-package C:\Users\nb008\AppData\Roaming\npm-cache\censorify\0.1.1\package
+26 silly lockFile f4e85958-pm-cache-censorify-0-1-1-package C:\Users\nb008\AppData\Roaming\npm-cache\censorify\0.1.1\package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { author: { name: 'Nick Bownes' },
+29 silly publish   name: 'censorify',
+29 silly publish   version: '0.1.1',
+29 silly publish   description: 'Censors words out of text',
+29 silly publish   main: 'censortext',
+29 silly publish   dependencies: {},
+29 silly publish   engines: { node: '*' },
+29 silly publish   readme: 'Some basic instructions for the censorify module.',
+29 silly publish   readmeFilename: 'readme.md',
+29 silly publish   _id: 'censorify@0.1.1',
+29 silly publish   scripts: {},
+29 silly publish   _shasum: '9e306c1c552aef4b8b84100d0664da7413637f66',
+29 silly publish   _from: '.' }
+30 verbose request where is /censorify
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 6f4b93d92c87841d
+33 verbose url raw /censorify
+34 verbose url resolving [ 'https://registry.npmjs.org/', './censorify' ]
+35 verbose url resolved https://registry.npmjs.org/censorify
+36 verbose request where is https://registry.npmjs.org/censorify
+37 info trying registry request attempt 1 at 11:20:43
+38 http PUT https://registry.npmjs.org/censorify
+39 http 403 https://registry.npmjs.org/censorify
+40 verbose headers { date: 'Tue, 25 Nov 2014 16:20:43 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '1667',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-ord1727-ORD',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1416932443.701521,VS0,VE259',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden cannot modify pre-existing version: 0.1.1
+42 error old={"author":{"name":"Brad Dayley"},"name":"censorify","version":"0.1.1","description":"Censors words out of text","main":"censortext","repository":{"type":"git","url":"https://github.com/sisingh/nodebook-ch03-censorify"},"keywords":["censor","words"],"dependencies":{},"engines":{"node":"*"},"bugs":{"url":"https://github.com/sisingh/nodebook-ch03-censorify/issues"},"homepage":"https://github.com/sisingh/nodebook-ch03-censorify","_id":"censorify@0.1.1","dist":{"shasum":"359a8af77858685bf2926c93ec3fb582ae704aa9","tarball":"http://registry.npmjs.org/censorify/-/censorify-0.1.1.tgz"},"_from":".","_npmVersion":"1.3.21","_npmUser":{"name":"sisingh","email":"singh_siddhu@yahoo.com"},"maintainers":[{"name":"sisingh","email":"singh_siddhu@yahoo.com"}]}
+42 error new={"author":{"name":"Nick Bownes"},"name":"censorify","version":"0.1.1","description":"Censors words out of text","main":"censortext","dependencies":{},"engines":{"node":"*"},"readme":"Some basic instructions for the censorify module.","readmeFilename":"readme.md","_id":"censorify@0.1.1","scripts":{},"_shasum":"9e306c1c552aef4b8b84100d0664da7413637f66","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"enembee","email":"nickbownes@gmail.com"},"maintainers":[{"name":"enembee","email":"nickbownes@gmail.com"}],"dist":{"shasum":"9e306c1c552aef4b8b84100d0664da7413637f66","tarball":"http://registry.npmjs.org/censorify/-/censorify-0.1.1.tgz"}}: censorify
+42 error     at RegClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
+42 error     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
+42 error     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:943:16
+42 error     at process._tickCallback (node.js:419:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Windows_NT 6.1.7601
+45 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error cwd c:\Users\nb008\My Documents\github\node_book\censorify
+47 error node -v v0.10.33
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]
