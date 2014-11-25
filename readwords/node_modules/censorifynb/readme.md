@@ -1,0 +1,1 @@
+Some basic instructions for the censorify module.
